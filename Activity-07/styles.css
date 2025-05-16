@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vlog</title>
+    
+</head>
+
+<body style="background-color: #B25E39; margin-left: 10%; margin-right: 10%;">
+
+    <header style="background-color: #473D3A; padding: 20px;">
+        <h1 style="color: #ffffff; text-align: center;">My New York Experience</h1>
+    </header>
+    <section>
+        <ul>
+          <li><a href="travelphotos.html">Travel Photos</a></li>
+          <li><a href="#carnegie">Carnegie Hall Experience</a></li>
+          <li><a href="https://photos.app.goo.gl/s8xknnbugnCbjHDk9">All Pictures</a></li>
+        </ul>
+  
+    <section><h2>About the Page</h2>
+        <p>I would like to share my experiences on my travel to New York City, and the purpose of our visit.</p>
+        <div style="text-align: center;">
+        <img src="building1.jpg" alt="Rooftop Photograph of Times Square" style="border-radius: 15px; width: 100%; max-width: 600px;">
+        </div>
+      </section>
+
+      <h3>Travel Itinerary</h3>
+
+      <ul>
+        <li>Food</li>
+        <li>Places</li>
+        <li>Performance Day</li>
+      </ul>
+            
+            <p><strong>Food</strong> in New York City, definitely one of the best food that I tasted, but since I am a Filipino, I still look to eat very familiar to me which is Jollibee in New York.</p>
+            
+            <div style="text-align: center;">
+              <img src="chicken.jpg" alt="Chicken Joy from Jollibee" style="box-shadow: 5px 5px 15px grey; width: 50%; max-width: 500px;">
+            </div>
+
+            <p><strong>Places</strong> has a lot of iconic places which are famous around the world, many people are dream to visit the places here such as Statue of Liberty, 911 Memorial place, Empire State Building and many more.</p>
+
+            <div style="text-align: center;">
+              <img src="statue1.jpg" alt="Statue of Liberty with me" style="border: 3px solid black; width: 30%;"> <img src="empire1.jpg" alt="Empire State Building with me" style="border: 3px solid black; width: 30%;">
+            </div>
+
+            <div style="text-align: center;">
+              <img src="memorial.jpg" alt="911 Memorial Park" style="border: 3px solid black; width: 50%;">
+            </div>
+
+            <p id="carnegie"><strong>A Night at Carnegie Hall</strong> in New York City, is one of the best experience I have had on my life. Carnegie Hall is the place that every musician dream to perform, and I am so blessed to be here and to represent my country.</p>
+            
+            <div style="text-align: center;">
+              <img src="carnegie.jpg" alt="Performance at Carnegie Hall" style="box-shadow: 5px 5px 15px grey; width: 100%; max-width: 500px;">
+            </div>
+        
+        </section>
+    <footer style="background-color: #473D3A">
+      <div style="text-align: center;">
+        <p>Contact me at lennon023@go.byuh.edu</p>
+        &copy; 2025 Lennon. All Rights Reserve 
+      </div>
+    </footer>
+    
+</body>
+</html>
