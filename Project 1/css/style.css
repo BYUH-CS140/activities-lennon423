@@ -1,0 +1,48 @@
+
+body {
+    background-color: #B8CFEC;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    background-color: #001f3f ;
+    padding: 1%
+    ;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+
+footer {
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+p {
+    color: black;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+.photo-frame {
+    border: 3px solid black;
+    width: 30%;
+    margin: 10px;
+}
+
+#mainHeader {
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    color: white; 
+}
