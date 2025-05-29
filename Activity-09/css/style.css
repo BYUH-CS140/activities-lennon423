@@ -1,49 +1,48 @@
-h2 {
-    background-color: transparent; /* Set to transparent as no value was provided */
-    margin: 0;
-    font-family: "Trajan Pro", serif;
-    text-align: center;
+body {
+  background-color: rgb(31, 30, 30);
+  color: white;
+  font-family: Montserrat, sans-serif;
 }
 
 .navbar-header {
-    width: 100%;
-    background-color: black;
-    box-shadow: 0 2px 5px white;
-    position: relative;
-    z-index: 1000;
-    padding: 10px 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 2px 5px white;
+  position: relative;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar-brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo-icon {
-    height: 40px;
-    width: auto;
-    margin-right: 10px; /* Added a value for margin */
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
 }
 
 .navbar-nav {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
@@ -51,84 +50,98 @@ h2 {
 }
 
 .nav-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 0.95em;
-    padding: 5px 0;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-    position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 5px 0;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
 .nav-link:hover {
-    color: white;
+  color: white;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 50%;
-    background-color: white;
-    transition: width 0.3s ease, left 0.3s ease;
-    transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-    transform: translateX(0);
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
 }
 
 .nav-link img {
+  width: 16px;
   margin-right: 5px;
   vertical-align: middle;
 }
 
 h1.hero-text {
-    width: 100%;
-    height: 50vh;
-    background-image: url('building1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Trajan Pro', serif;
-    padding: 1%;
-    font-weight: 200;
-    letter-spacing: -3px;
+  width: 100%;
+  height: 50vh;
+  background-image: url('building1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trajan Pro', serif;
+  padding: 1%;
+  font-weight: 200;
+  letter-spacing: -3px;
 }
 
-body {
-    background-color: rgb(31, 30, 30);
-    color: white;
-    font-family: Montserrat, sans-serif;
+h2 {
+  background-color: transparent;
+  margin: 0;
+  font-family: "Trajan Pro", serif;
+  text-align: center;
 }
 
-footer {
-    color: white;
-    font-weight: lighter;
-    font-size: 0.95em;
-    font-family: Montserrat, sans-serif;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-    position: relative;
+.centered-image {
+  box-shadow: 5px 5px 15px grey;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 .resources {
-    background-color: black;
+  background-color: black;
 }
 
 .resources li {
-    background-color: black;
+  background-color: black;
+}
+
+footer {
+  background-color: #001f3f;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.95em;
+  font-family: Montserrat, sans-serif;
+  padding: 5px 0;
+  position: relative;
+}
+
+.footer-content {
+  text-align: center;
 }
 
 .dropdown-menu {
@@ -172,7 +185,7 @@ footer {
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   margin-top: 1em;
@@ -186,4 +199,75 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.logo-icon {
+  height: 40px;
+  width: auto;
+}
+
+.nav-icon {
+  width: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.center-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.center-image img {
+  box-shadow: 5px 5px 15px grey;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer {
+  background-color: #001f3f;
+  padding: 10px 0;
+  color: white;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.logo-height {
+  height: 40px;
+}
+
+.nav-icon {
+  width: 16px;
+}
+
+.image-shadow {
+  box-shadow: 5px 5px 15px grey;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer-background {
+  background-color: #001f3f;
+}
+
+.footer-text-center {
+  text-align: center;
+}
+
+.footer-text {
+  color: white;
+}
+
+.image-center {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.shadowed-image {
+  box-shadow: 5px 5px 15px grey;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 4%;
 }
