@@ -1,0 +1,97 @@
+/* Base styles (Mobile-first) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+.nav ul li {
+  margin: 0.5em 0;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.main-content,
+.sidebar,
+.extra-content {
+  padding: 1em;
+  background: #f4f4f4;
+  margin: 0.5em 0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Tablet view (2 columns) */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    flex: 2;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+
+  .extra-content {
+    display: none;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .nav ul li {
+    margin: 0;
+  }
+}
+
+/* Desktop view (3 columns) */
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .extra-content {
+    display: block;
+  }
+
+  .nav ul {
+    justify-content: center;
+  }
+}
