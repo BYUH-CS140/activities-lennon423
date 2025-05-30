@@ -46,3 +46,46 @@ p {
     letter-spacing: 2.5px;
     color: white; 
 }
+
+.centered-image {
+    text-align: center;
+}
+
+.rounded-img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.shadowed-img {
+    box-shadow: 5px 5px 15px grey;
+    width: 50%;
+    max-width: 500px;
+}
+
+.shadowed-img-wide {
+    box-shadow: 5px 5px 15px grey;
+    width: 100%;
+    max-width: 500px;
+}
+
+.photo-frame {
+    margin: 0 10px;
+    max-width: 45%;
+    height: auto;
+}
+
+.bordered-img {
+    border: 3px solid black;
+    width: 50%;
+}
+
+footer {
+    background-color: #001f3f;
+}
+
+.footer-content {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
