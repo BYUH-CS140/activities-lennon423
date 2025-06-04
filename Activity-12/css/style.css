@@ -7,12 +7,12 @@
 }
 
 .grid-item:first-child {
-    grid-column: 1/6;
+    grid-column: 1 / 6;
     background-color: rgb(110, 10, 10);
 }
 
 .grid-item:last-child{
-    grid-column: 1/6;
+    grid-column: 1 / 6;
     background-color: rgb(110, 10, 10);
 }
 
