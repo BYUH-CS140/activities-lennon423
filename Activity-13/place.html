@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Travel Vlog - Activity 7</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
 
+<body>
   <header class="navbar-header">
     <nav class="navbar">
-      <a href="#" class="navbar-brand">
+      <a href="index.html" class="navbar-brand">
         <img src="images/logo.png" alt="NYC" class="logo-icon" />
       </a>
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            <img src="images/home.png" alt="Home" class="icon-small" /> HOME
-          </a>
+        <li class="nav-item"><a href="index.html" class="nav-link"><img src="images/home.png" alt="Home" /> HOME</a>
         </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            <img src="images/about.png" alt="About" class="icon-small" /> About
-          </a>
+        <li class="nav-item"><a href="about.html" class="nav-link"><img src="images/about.png" alt="About" /> About</a>
         </li>
-
         <li class="nav-item dropdown">
-          <a href="place.html" class="nav-link">
-            <img src="images/places.png" alt="Places" class="icon-small" /> Places ▾
+          <a href="place.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+            role="button">
+            <img src="images/places.png" alt="Places" /> Places ▾
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="stjohn.html">St. John the Divine Cathedral</a></li>
-            <li><a href="time.html">Times Square</a></li>
-            <li><a href="statue.html">Statue of Liberty</a></li>
+          <ul class="dropdown-menu" role="menu" aria-label="Places submenu">
+            <li role="none"><a href="stjohn.html" role="menuitem">St. John the Divine Cathedral</a></li>
+            <li role="none"><a href="time.html" role="menuitem">Times Square</a></li>
+            <li role="none"><a href="statue.html" role="menuitem">Statue of Liberty</a></li>
           </ul>
         </li>
-
-        <li class="nav-item">
-          <a href="food.html" class="nav-link">
-            <img src="images/food.png" alt="Food" class="icon-small" /> Food
-          </a>
-        </li>
+        <li class="nav-item"><a href="food.html" class="nav-link"><img src="images/food.png" alt="Food" /> Food</a></li>
       </ul>
     </nav>
   </header>
@@ -53,7 +43,10 @@
     <section>
       <h2>New York City Highlights</h2>
       <p>
-        <strong>New York City</strong> is home to countless iconic landmarks, including the Empire State Building, Times Square, the 9/11 Memorial, and the world-renowned Statue of Liberty. It's the most urbanized and vibrant place I have ever visited. Although the city is undeniably expensive, experiencing it even once was truly worth it. The memories I created there with my friends are treasures I’ll cherish forever.
+        <strong>New York City</strong> is home to countless iconic landmarks, including the Empire State Building, Times
+        Square, the 9/11 Memorial, and the world-renowned Statue of Liberty. It's the most urbanized and vibrant place I
+        have ever visited. Although the city is undeniably expensive, experiencing it even once was truly worth it. The
+        memories I created there with my friends are treasures I’ll cherish forever.
       </p>
 
       <div class="image-center">
@@ -75,12 +68,41 @@
     </section>
   </main>
 
-  <footer class="footer-dark">
+  <footer>
     <div class="footer-content">
       <p>Contact me at lennon023@go.byuh.edu</p>
       <p>&copy; 2025 Lennon. All Rights Reserved</p>
     </div>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+
+      dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+        dropdownToggle.setAttribute('aria-expanded', !isExpanded);
+        dropdownMenu.style.display = isExpanded ? 'none' : 'block';
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownToggle.setAttribute('aria-expanded', 'false');
+          dropdownMenu.style.display = 'none';
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+          dropdownToggle.setAttribute('aria-expanded', 'false');
+          dropdownMenu.style.display = 'none';
+          dropdownToggle.focus();
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
