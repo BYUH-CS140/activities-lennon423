@@ -18,10 +18,10 @@
         <li class="nav-item"><a href="index.html" class="nav-link"><img src="images/home.png" alt="Home" /> HOME</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link"><img src="images/about.png" alt="About" /> About</a></li>
         <li class="nav-item dropdown">
-          <a href="place.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">
+          <a href="place.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu" role="button">
             <img src="images/places.png" alt="Places" /> Places ▾
           </a>
-          <ul class="dropdown-menu" role="menu" aria-label="Places submenu">
+          <ul class="dropdown-menu" role="menu" aria-label="Places submenu" id="dropdown-menu">
             <li role="none"><a href="stjohn.html" role="menuitem">St. John the Divine Cathedral</a></li>
             <li role="none"><a href="time.html" role="menuitem">Times Square</a></li>
             <li role="none"><a href="statue.html" role="menuitem">Statue of Liberty</a></li>
@@ -39,8 +39,8 @@
 
     <section>
       <h2>Carnegie Hall Experience</h2>
-      <section class="float-section">
-        <section class="flexbox-section">
+      <div class="float-section">
+        <div class="flexbox-section">
           <div class="column-left">
             <p id="carnegie"><strong>A Night at Carnegie Hall</strong> in New York City is one of the best experiences I
               have had in my life. Carnegie Hall is the place that every musician dreams to perform at, and I am so
@@ -57,7 +57,7 @@
 
             <img src="images/filipino.jpg" alt="Filipino Choir at Carnegie Hall" class="centered-image" />
           </div>
-        </section>
+        </div>
 
         <section class="resources">
           <h2>Other Resources</h2>
@@ -66,7 +66,7 @@
             <li><a href="https://photos.app.goo.gl/s8xknnbugnCbjHDk9">All Pictures</a></li>
           </ul>
         </section>
-      </section>
+      </div>
     </section>
   </main>
 
