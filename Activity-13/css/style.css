@@ -334,57 +334,8 @@ footer {
   padding: 2px;
 }
 
-/*tablets*/
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 22px;
-  }
-
-  .navbar {
-    flex-direction: row;
-  }
-
-  .flexbox-section {
-    flex-direction: row;
-  }
+@media (min-width: 768px) {
 }
 
-/*Desktop*/
-@media screen and (min-width: 1024px) {
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .multi-column {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
+@media (min-width: 1024px) {
 }
-
-.dropdown-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 0.95em;
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.dropdown-toggle:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
-}
-
-a:focus, button:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
-}
-
