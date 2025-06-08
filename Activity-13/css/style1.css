@@ -309,9 +309,67 @@ footer {
   clear: both;
 }
 
-
+/* Tablet styles */
 @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    font-size: 1.05em;
+  }
+
+  h1.hero-text {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+
+  .resources ul {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .centered-image,
+  .shadowed-image {
+    max-width: 600px;
+  }
 }
 
+/* Desktop styles */
 @media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.15em;
+  }
+
+  h1.hero-text {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .centered-image,
+  .shadowed-image {
+    max-width: 700px;
+  }
 }
