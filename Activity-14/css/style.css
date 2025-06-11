@@ -11,6 +11,9 @@ body {
        "footer";
   grid-template-columns: 1fr;
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .navbar-header {
@@ -48,11 +51,7 @@ body {
 }
 
 .navbar-nav {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+  
 }
 
 main{
@@ -289,6 +288,11 @@ img{
 
   .navbar {
     padding: 0 40px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar-header{
@@ -327,11 +331,32 @@ img{
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
+         display: grid;
     grid-template-areas:
-        "header header header"
-        "Nav main main"
-        "footer footer footer";
+      "header header"
+      "nav main"
+      "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
   }
+
+  nav {
+    grid-area: nav;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
 
   main {
     max-width: 1200px;
@@ -361,9 +386,6 @@ img{
     max-width: 700px;
   }
 
-  
-
-}
 
 figcaption {
     text-align: center;
