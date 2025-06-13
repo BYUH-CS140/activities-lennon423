@@ -50,10 +50,6 @@ body {
   margin-right: 10px;
 }
 
-.navbar-nav {
-  
-}
-
 main{
   grid-area: main;
 }

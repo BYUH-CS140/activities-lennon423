@@ -185,7 +185,7 @@ header {
 
     .navbar .links,
     .navbar .action_btn {
-        display: flex;
+        display: none;
     }
 
     .dropdown_menu {
@@ -193,7 +193,7 @@ header {
     }
 
     .navbar .toggle_btn {
-        display: none;
+        display: block;
     }
 
     .dropdown_menu {
@@ -221,7 +221,12 @@ header {
         max-width: 400px;
     }
 
-    .action_btn{
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .navbar .links,
+    .navbar .action_btn {
         display: none;
     }
 
@@ -229,8 +234,16 @@ header {
         display: none;
     }
 
-    .navbar .toggle_btn {
-        display: block;
+    .image-wrapper1{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-wrapper2{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -289,23 +302,29 @@ section#hero h1 {
 
 .bottom-gallery img {
     width: 30%;
-    /* or a fixed width like 300px */
     height: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* optional: image shadow */
     overflow: hidden;
 }
 
-.image-wrapper {
-    width: 300px;
-    height: 200px;
+.image-wrapper1 {
+   width: 100%;
+    height: auto;
     overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
 }
 
-.image-wrapper img {
+.image-wrapper2 {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
 }
+
 
 h2.text-color {
     color: #fff;
