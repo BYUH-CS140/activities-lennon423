@@ -33,6 +33,13 @@ body.about-page {
     background-position: center;
 }
 
+body.contact-page {
+    height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+
 .bio-text {
     flex: 1;
     max-width: 500px;

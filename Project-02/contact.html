@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Activity 14</title>
+</head>
+
+<body class="contact-page">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">JLEO Studio</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Galleries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="started.html" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <ul class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="started.html" class="action_btn">Get Started</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="bio-container">
+            <div class="bio-text">
+                <h1>Biography</h1>
+                <p>Hi, I’m John Lennon Onda, the heart behind the lens at JLEO Studio.</p>
+                <p>My journey into photography began with a simple wish — to capture the moments I never had the chance
+                    to keep. Growing up, we didn’t have many photos to look back on, and that absence made me realize
+                    how powerful memories become when frozen in time.</p>
+                <p>That’s what drives me today: the desire to help others preserve their most precious memories. Whether
+                    it’s a quiet smile, a joyful celebration, or a fleeting glance — I believe every photo tells a story
+                    worth keeping.</p>
+                <p>Let’s create something beautiful that you can always look back on.</p>
+            </div>
+                <div class="bio-image">
+    <img src="images/photograph.jpeg" alt="Photographer" />
+  </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.addEventListener('click', function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        });
+    </script>
+</body>
+<footer class="footer-content">
+      <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
+      <p>&copy; 2025 Lennon. All Rights Reserved.</p>
+  </footer>
+</html>
+
+</html>
