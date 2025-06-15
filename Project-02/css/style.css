@@ -101,12 +101,29 @@ body {
     letter-spacing: -3px;
 }
 
-.home-section { background-image: url('images/mabini.jpg'); }
-.diving-section { background-image: url('images/diving.jpg'); }
-.beach-section { background-image: url('images/beach.jpg'); }
-.food-section { background-image: url('images/Mabini.jpg'); }
-.mountain-section { background-image: url('images/mountain.jpg'); }
-.product-section { background-image: url('images/liberica.webp'); }
+.home-section {
+    background-image: url('images/mabini.jpg');
+}
+
+.diving-section {
+    background-image: url('images/diving.jpg');
+}
+
+.beach-section {
+    background-image: url('images/beach.jpg');
+}
+
+.food-section {
+    background-image: url('images/Mabini.jpg');
+}
+
+.mountain-section {
+    background-image: url('images/mountain.jpg');
+}
+
+.product-section {
+    background-image: url('images/liberica.webp');
+}
 
 h2 {
     font-family: 'Poppins', Helvetica, sans-serif;
@@ -173,7 +190,7 @@ figcaption {
     height: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
 }
@@ -315,18 +332,18 @@ a:hover {
     }
 
     .navbar-nav {
-    display: none;
-  }
+        display: none;
+    }
 
-  .navbar .toggle_btn{
-    display: flex;
-  }
+    .navbar .toggle_btn {
+        display: flex;
+    }
 
-  .dropdown_menu {
-    display: none;
-  }
+    .dropdown_menu {
+        display: none;
+    }
 
-  .dropdown_menu.open {
-    display: flex;
-  }
+    .dropdown_menu.open {
+        display: flex;
+    }
 }
