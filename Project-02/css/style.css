@@ -79,100 +79,14 @@ body {
     transform: translateX(0);
 }
 
-.home-section {
-    width: 100%;
-    height: 50vh;
-    background-image: url('images/mabini.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: -3px;
-}
-
-.diving-section {
-    width: 100%;
-    height: 50vh;
-    background-image: url('images/diving.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: -3px;
-}
-
-.beach-section {
-    width: 100%;
-    height: 50vh;
-    background-image: url('images/beach.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: -3px;
-}
-
-.food-section {
-    width: 100%;
-    height: 50vh;
-    background-image: url('images/Mabini.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: -3px;
-}
-
-.mountain-section {
-    width: 100%;
-    height: 50vh;
-    background-image: url('images/mountain.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: -3px;
-}
-
+.home-section,
+.diving-section,
+.beach-section,
+.food-section,
+.mountain-section,
 .product-section {
     width: 100%;
     height: 50vh;
-    background-image: url('images/liberica.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -186,6 +100,13 @@ body {
     font-weight: 200;
     letter-spacing: -3px;
 }
+
+.home-section { background-image: url('images/mabini.jpg'); }
+.diving-section { background-image: url('images/diving.jpg'); }
+.beach-section { background-image: url('images/beach.jpg'); }
+.food-section { background-image: url('images/Mabini.jpg'); }
+.mountain-section { background-image: url('images/mountain.jpg'); }
+.product-section { background-image: url('images/liberica.webp'); }
 
 h2 {
     font-family: 'Poppins', Helvetica, sans-serif;
@@ -251,10 +172,10 @@ figcaption {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 10px;
-    display: grid
 }
 
 .action_btn:hover {
@@ -283,8 +204,9 @@ figcaption {
 }
 
 .dropdown_menu.open {
-    height: 240px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .dropdown_menu li {
@@ -301,12 +223,6 @@ figcaption {
     width: 100%;
     text-align: center;
     color: white;
-}
-
-.dropdown_menu.open {
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
 
 .navbar .toggle_btn {
@@ -329,82 +245,6 @@ a:hover {
     display: flex;
 }
 
-@media (max-width: 576px) {
-    .navbar-nav {
-        display: none;
-
-    }
-
-    .navbar .toggle_btn {
-        display: flex;
-    }
-
-    .navbar .toggle_btn {
-        display: block;
-    }
-
-    .navbar .links,
-    .navbar .action_btn {
-        display: none;
-    }
-
-    .navbar .links {
-        display: none;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    .image-wrapper1 {
-        grid-template-columns: 1fr;
-    }
-
-    .dropdown_menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .dropdown_menu li {
-        padding: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .toggle_btn {
-        display: flex;
-    }
-
-    h1.hero-text {
-        font-size: 3rem;
-    }
-
-    .home-section {
-        font-size: 2rem;
-    }
-
-    .beach-section {
-        font-size: 2rem;
-    }
-
-    .diving-section {
-        font-size: 2rem;
-    }
-
-    .food-section {
-        font-size: 2rem;
-    }
-
-    .mountain-section {
-        font-size: 2rem;
-    }
-
-    .product-section {
-        font-size: 2rem;
-    }
-}
 
 @media (max-width: 1024px) {
     .image-wrapper1 {
@@ -413,7 +253,6 @@ a:hover {
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
-        grid-template-columns: 1fr 1fr;
     }
 
     .image-wrapper1 img {
@@ -424,27 +263,70 @@ a:hover {
         text-align: justify;
     }
 
-    .home-section {
-        font-size: 2rem;
-    }
-
-    .beach-section {
-        font-size: 2rem;
-    }
-
-    .diving-section {
-        font-size: 2rem;
-    }
-
-    .food-section {
-        font-size: 2rem;
-    }
-
-    .mountain-section {
-        font-size: 2rem;
-    }
-
+    .home-section,
+    .beach-section,
+    .diving-section,
+    .food-section,
+    .mountain-section,
     .product-section {
         font-size: 2rem;
     }
+}
+
+@media (max-width: 576px) {
+    .image-wrapper1 {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .image-wrapper1 img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .dropdown_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu li {
+        padding: 0.7rem;
+        justify-content: center;
+    }
+
+    .toggle_btn {
+        display: flex;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    h1.hero-text,
+    .home-section,
+    .beach-section,
+    .diving-section,
+    .food-section,
+    .mountain-section,
+    .product-section {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+    display: none;
+  }
+
+  .navbar .toggle_btn{
+    display: flex;
+  }
+
+  .dropdown_menu {
+    display: none;
+  }
+
+  .dropdown_menu.open {
+    display: flex;
+  }
 }
