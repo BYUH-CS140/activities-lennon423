@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Vlog - Famous Mountain in Mabini</title>
+    <title>Travel Vlog - Project 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="navbar-header">
         <nav class="navbar">
-            <a href="index.html" class="navbar-brand">
-                <img src="images/logo.png" alt="Travel Vlog Logo" class="logo-icon">
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="Photo Tour in Mabini" class="logo-icon">
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
@@ -21,6 +26,18 @@
                 <li class="nav-item"><a href="diving.html" class="nav-link">Diving</a></li>
                 <li class="nav-item"><a href="food.html" class="nav-link">Food</a></li>
                 <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beaches.html">Beaches</a></li>
+                <li><a href="mountain.html">Mountains</a></li>
+                <li><a href="diving.html">Diving</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
     </header>
@@ -33,20 +50,23 @@
         <section class="content-section">
             <h3>Gulugod Baboy</h3>
             <p>
-                "Gulugod baboy" in Filipino translates to "pig's spine" and refers to a specific mountain in Mabini, Batangas, Philippines. It's a popular hiking destination known for its steep terrain, three distinct peaks (including the highest, Pinagbanderahan), and stunning panoramic views of the sea, green hills, and nearby mountains. The hike is considered moderate to challenging, taking around 2 hours to complete.
+                "Gulugod baboy" in Filipino translates to "pig's spine" and refers to a specific mountain in Mabini,
+                Batangas, Philippines. It's a popular hiking destination known for its steep terrain, three distinct
+                peaks (including the highest, Pinagbanderahan), and stunning panoramic views of the sea, green hills,
+                and nearby mountains. The hike is considered moderate to challenging, taking around 2 hours to complete.
             </p>
             <p>
-                Beyond its aquatic allure, Mabini is also steeped in history and culture. Visitors can explore historical sites like the San Miguel Arcangel Parish Church, which showcases beautiful architecture and local traditions. The town is also known for its annual festivals, such as the Pista ng Bayan, which celebrates local culture through vibrant parades and traditional performances.
+                Beyond its aquatic allure, Mabini is also steeped in history and culture. Visitors can explore
+                historical sites like the San Miguel Arcangel Parish Church, which showcases beautiful architecture and
+                local traditions. The town is also known for its annual festivals, such as the Pista ng Bayan, which
+                celebrates local culture through vibrant parades and traditional performances.
             </p>
-            <figure class="gallery-item">
-                <img src="images/gulugod.jpg" alt="View from Gulugod Baboy mountain">
-                <figcaption>Summit views from Mt. Gulugod Baboy! A refreshing escape.</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="images/baboy.jpg" alt="Overlooking view from Gulugod Baboy peak">
-                <figcaption>Overlooking view at the top of the peak.</figcaption>
-            </figure>
         </section>
+
+        <div class="image-wrapper1">
+            <img src="images/gulugod.jpg" alt="Gallery Image 1">
+            <img src="images/baboy.jpg" alt="Gallery Image 2">
+        </div>
     </main>
 
     <footer>
@@ -54,5 +74,21 @@
         <p>&copy; 2025 Lennon. All Rights Reserved</p>
     </footer>
 
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.addEventListener('click', function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        });
+    </script>
+
 </body>
+
 </html>

@@ -148,23 +148,32 @@ figcaption {
 }
 
 .responsive-img {
-            border-radius: 15px;
-            width: 100%;
-            max-width: 600px;
-        }
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+}
 
-        .image-gallery {
-            text-align: center;
-        }
+.image-gallery {
+    text-align: center;
+}
 
 .image-wrapper1 {
-   width: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 10px;
-    display:grid
+    display: grid
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
 }
 
 .dropdown_menu {
@@ -174,23 +183,40 @@ figcaption {
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(74, 72, 95, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     max-height: 500px;
+    align-items: center;
 }
 
 .dropdown_menu.open {
     height: 240px;
+    align-items: center;
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown_menu a {
+    padding: 1;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:white;
+}
+
+.dropdown_menu.open {
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .navbar .toggle_btn {
@@ -199,21 +225,68 @@ figcaption {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #F2D5A0;
+}
+
+.toggle_btn {
+    display: flex;
+}
+
 @media (max-width: 576px) {
-     .navbar-nav{
+    .navbar-nav {
         display: none;
-        
-     }
 
-     .navbar .toggle_btn {
+    }
+
+    .navbar .toggle_btn {
         display: flex;
-     }
+    }
 
-     img {
-    width: 100%;
-    height: auto;
-  }
-     .image-wrapper1 {
-    grid-template-columns: 1fr;
-  }
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .links {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-wrapper1 {
+        grid-template-columns: 1fr;
+    }
+
+    .dropdown_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .toggle_btn {
+        display: flex;
+    }
+    h1.hero-text {
+        font-size: 3rem;
+    }
 }
