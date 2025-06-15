@@ -292,26 +292,19 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-  }
-
   .image-wrapper1 {
-    grid-column: span 2; /* Keep full width if you want */
+    grid-column: span 2; 
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   .image-wrapper1 img {
     width: 48%;
   }
 
-  /* Optional: Paragraph styling in two columns */
   main p {
     text-align: justify;
   }
