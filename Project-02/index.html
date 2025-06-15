@@ -2,86 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Activity 14</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vlog - Activity 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="home-page">
-  <header>
-    <div class="navbar">
-      <div class="logo"><a href="index.html">JLEO Studio</a></div>
-      <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Galleries</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a href="started.html" class="action_btn">Get Started</a>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
+<body>
 
-    <ul class="dropdown_menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="started.html" class="action_btn">Get Started</a></li>
-    </ul>
-  </header>
+    <header class="navbar-header">
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="Photo Tour in Mabini" class="logo-icon">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="beaches.html" class="nav-link">Beaches</a></li>
+                <li class="nav-item"><a href="mountain.html" class="nav-link">Mountains</a></li>
+                <li class="nav-item"><a href="diving.html" class="nav-link">Diving</a></li>
+                <li class="nav-item"><a href="food.html" class="nav-link">Food</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-  <main>
-    <section id="hero">
-      <h1>Welcome</h1>
-      <p>Capture moments. Create memories. Relive stories <br>Welcome to a place where each frame holds a piece of your story.</p>
-    </section>
-  </main>
-<section>
-   <h2 class="text-color">Galleries</h2>
-  <section class="bottom-gallery"> 
-  <ul>
-  <div class="image-wrapper1">
-  <img src="images/guen1.jpg" alt="Gallery Image 1">
-  <img src="images/wedding.jpg" alt="Gallery Image 2">
-  <img src="images/guen.jpg" alt="Gallery Image 3">
-  </div>
-  
-  <h3>Wedding</h3>
-  <div class="image-wrapper2">
-  <img src="images/mongolian.jpg" alt="Gallery Image 1">
-  <img src="images/mongolian2.jpg" alt="Gallery Image 2">
-  <img src="images/mongolian3.jpg" alt="Gallery Image 3">
-  </div>
+            <ul class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beaches.html">Beaches</a></li>
+                <li><a href="mountain.html">Mountains</a></li>
+                <li><a href="diving.html">Diving</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="products.html">Products</a></li>
+        </nav>
+    </header>
 
-  </section>
-</section>
+    <main>
+        <section class="hero-section">
+            <h1 class="hero-text"><strong>Welcome to Mabini</strong></h1>
+        </section>
 
+        <section>
+            <h2>Mabini</h2>
+            <p>
+                Mabini, a picturesque municipality located on the western coast of Batangas, is a paradise for beach
+                lovers and diving enthusiasts. Known for its stunning beaches and crystal-clear waters, the area boasts
+                numerous dive sites, including the famous Sepoc Beach and the vibrant coral gardens of Batangas Bay,
+                attracting divers from around the world to explore its rich marine biodiversity.
+            </p>
+            <p>
+                Beyond its aquatic allure, Mabini is also steeped in history and culture. Visitors can explore
+                historical sites like the San Miguel Arcangel Parish Church, which showcases beautiful architecture and
+                local traditions. The town is also known for its annual festivals, such as the Pista ng Bayan, which
+                celebrates local culture through vibrant parades and traditional performances.
+            </p>
 
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn');
-    const toggleBtnIcon = document.querySelector('.toggle_btn i');
-    const dropDownMenu = document.querySelector('.dropdown_menu');
+            <div class="image-wrapper1">
+                <img src="images/map.png" alt="Gallery Image 1">
+                <img src="images/anilao.jpg" alt="Gallery Image 2">
+            </div>
+        </section>
+    </main>
 
-    toggleBtn.addEventListener('click', function () {
-      dropDownMenu.classList.toggle('open');
-      const isOpen = dropDownMenu.classList.contains('open');
+    <footer>
+        <p>Contact me at lennon023@go.byuh.edu</p>
+        <p>&copy; 2025 Lennon. All Rights Reserved</p>
+    </footer>
 
-      toggleBtnIcon.className = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars';
-    });
-  </script>
-</body>
- <footer class="footer-content">
-      <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
-      <p>&copy; 2025 Lennon. All Rights Reserved.</p>
-  </footer>
-</html>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.addEventListener('click', function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        });
+
+</body >
+
+</html >

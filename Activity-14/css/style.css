@@ -4,16 +4,88 @@ body {
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
-  grid-template-areas: 
-       "header"
-       "nav"
-       "main"
-       "footer";
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
   grid-template-columns: 1fr;
   gap: 10px;
   display: flex;
   flex-direction: column;
   margin: 0;
+}
+
+.home-section {
+  width: 100%;
+  height: 50vh;
+  background-image: url('images/building1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trajan Pro', serif;
+  padding: 1%;
+  font-weight: 200;
+  letter-spacing: -3px;
+}
+
+.about-section {
+  width: 100%;
+  height: 50vh;
+  background-image: url('images/choir3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trajan Pro', serif;
+  padding: 1%;
+  font-weight: 200;
+  letter-spacing: -3px;
+}
+
+.foods-section {
+  width: 100%;
+  height: 50vh;
+  background-image: url('images/food1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trajan Pro', serif;
+  padding: 1%;
+  font-weight: 200;
+  letter-spacing: -3px;
+}
+
+
+.logo-icon {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+main {
+  grid-area: main;
+}
+
+header {
+  grid-area: header;
 }
 
 .navbar-header {
@@ -22,7 +94,7 @@ body {
   box-shadow: 0 2px 5px white;
   position: relative;
   z-index: 1000;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .navbar {
@@ -32,7 +104,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 
 .navbar-brand {
@@ -50,12 +121,12 @@ body {
   margin-right: 10px;
 }
 
-main{
-  grid-area: main;
-}
-
-header{
-  grid-area: header;
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
@@ -95,34 +166,10 @@ header{
   transform: translateX(0);
 }
 
-.nav-link img,
-.nav-icon {
+.nav-link img {
   width: 16px;
   margin-right: 5px;
   vertical-align: middle;
-}
-
-nav{
-  grid-area: nav;
-}
-
-h1.hero-text {
-  width: 100%;
-  height: 50vh;
-  background-image: url('images/building1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  font-size: 80px;
-  font-family: 'Trajan Pro', serif;
-  padding: 1%;
-  font-weight: 200;
-  letter-spacing: -3px;
 }
 
 h2 {
@@ -257,8 +304,8 @@ footer,
   padding: 2px;
 }
 
-img{
-  border:1px solid black;
+img {
+  border: 1px solid black;
   width: 100%;
 }
 
@@ -268,129 +315,122 @@ img{
   gap: 10px;
 }
 
-/* Tablet styles */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-
-  .dropdown-menu{
-    left: 2rem;
-  }
-
-  .dropdown:hover{
-    position: absolute;
-  }
-
-  .navbar {
-    padding: 0 40px;
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-header{
-    padding: 2px 0
-  }
-
-  .navbar-brand {
-    font-size: 1.8rem;
-  }
-
-  .nav-link {
-    font-size: 1.05em;
-  }
-
-  h1.hero-text {
-    font-size: 3rem;
-    letter-spacing: -2px;
-  }
-
-  .resources ul {
-    columns: 2;
-    column-gap: 2rem;
-  }
-
-  .centered-image,
-  .shadowed-image {
-    max-width: 600px;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Desktop styles */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-         display: grid;
-    grid-template-areas:
-      "header header"
-      "nav main"
-      "footer footer";
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-  }
-
-  nav {
-    grid-area: nav;
-  }
-
-  header {
-    grid-area: header;
-  }
-
-  main {
-    grid-area: main;
-  }
-
-  footer {
-    grid-area: footer;
-  }
+.navbar-brand {
+  font-size: 2rem;
 }
 
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+.nav-link {
+  font-size: 1.15em;
+}
 
-  .navbar-brand {
-    font-size: 2rem;
-  }
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  .nav-link {
-    font-size: 1.15em;
-  }
+h1.hero-text {
+  font-size: 4rem;
+  letter-spacing: -1px;
+}
 
-  .gallery{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  h1.hero-text {
-    font-size: 4rem;
-    letter-spacing: -1px;
-  }
-
-  .centered-image,
-  .shadowed-image {
-    max-width: 700px;
-  }
+.centered-image,
+.shadowed-image {
+  max-width: 700px;
+}
 
 
 figcaption {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-style: italic;
-    color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 1.4;
+  padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+  .nav-link img {
+    margin-right: 10px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    height: 30vh;
+    letter-spacing: 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .flexbox-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column-left,
+  .column-right {
+    padding: 10px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  footer {
     font-size: 0.9em;
-    line-height: 1.4;
-    padding: 0 10px;
-    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
