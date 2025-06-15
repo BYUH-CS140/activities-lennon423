@@ -290,3 +290,29 @@ a:hover {
         font-size: 3rem;
     }
 }
+
+@media (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .image-wrapper1 {
+    grid-column: span 2; /* Keep full width if you want */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .image-wrapper1 img {
+    width: 48%;
+  }
+
+  /* Optional: Paragraph styling in two columns */
+  main p {
+    text-align: justify;
+  }
+}
