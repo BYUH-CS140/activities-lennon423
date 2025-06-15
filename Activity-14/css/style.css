@@ -16,6 +16,25 @@ body {
   margin: 0;
 }
 
+.hero-text {
+  width: 100%;
+  height: 50vh;
+  background-image: url('images/building1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Trajan Pro', serif;
+  padding: 1%;
+  font-weight: 200;
+  letter-spacing: -3px;
+}
+
 .home-section {
   width: 100%;
   height: 50vh;
@@ -366,6 +385,7 @@ figcaption {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
+    align-items: center;
   }
 
   .navbar-brand {
@@ -398,9 +418,28 @@ figcaption {
     position: static;
     box-shadow: none;
     padding-left: 15px;
+    align-items: center;
   }
 
-  .hero-text {
+  .about-section {
+    font-size: 2rem;
+    height: 30vh;
+    letter-spacing: 0;
+  }
+
+  .foods-section {
+    font-size: 2rem;
+    height: 30vh;
+    letter-spacing: 0;
+  }
+
+  .home-section{
+    font-size: 2rem;
+    height: 30vh;
+    letter-spacing: 0;
+  }
+
+  .hero-text{
     font-size: 2rem;
     height: 30vh;
     letter-spacing: 0;
