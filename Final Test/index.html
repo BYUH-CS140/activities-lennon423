@@ -16,7 +16,9 @@
 <body class="home-page">
   <header>
     <div class="navbar">
-      <div class="logo"><a href="index.html">JLEO Studio</a></div>
+      <a href="index.html" class="navbar-brand">
+        <img src="images/jleo.png" alt="NYC Logo" class="logo-icon" />
+      </a>
       <ul class="links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -45,40 +47,25 @@
     </section>
   </main>
 <section>
-   <h2 class="text-color">Galleries</h2>
+  <h2 class="text-color">Galleries</h2>
   <section class="bottom-gallery"> 
-  <ul>
-  <div class="image-wrapper1">
-  <img src="images/guen1.jpg" alt="Gallery Image 1">
-  <img src="images/wedding.jpg" alt="Gallery Image 2">
-  <img src="images/guen.jpg" alt="Gallery Image 3">
-  </div>
-  
-  <h3>Wedding</h3>
-  <div class="image-wrapper2">
-  <img src="images/mongolian.jpg" alt="Gallery Image 1">
-  <img src="images/mongolian2.jpg" alt="Gallery Image 2">
-  <img src="images/mongolian3.jpg" alt="Gallery Image 3">
-  </div>
+    <div class="image-wrapper1">
+      <img src="images/guen1.jpg" alt="Gallery Image 1">
+      <img src="images/wedding.jpg" alt="Gallery Image 2">
+      <img src="images/guen.jpg" alt="Gallery Image 3">
+    </div>
 
+    <h3>Wedding</h3>
+    <div class="image-wrapper2">
+      <img src="images/mongolian.jpg" alt="Gallery Image 1">
+      <img src="images/mongolian2.jpg" alt="Gallery Image 2">
+      <img src="images/mongolian3.jpg" alt="Gallery Image 3">
+    </div>
   </section>
 </section>
 
+<script src="scripts/script.js"></script>
 
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn');
-    const toggleBtnIcon = document.querySelector('.toggle_btn i');
-    const dropDownMenu = document.querySelector('.dropdown_menu');
-
-    toggleBtn.addEventListener('click', function () {
-      dropDownMenu.classList.toggle('open');
-      const isOpen = dropDownMenu.classList.contains('open');
-
-      toggleBtnIcon.className = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars';
-    });
-  </script>
 </body>
  <footer class="footer-content">
       <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>

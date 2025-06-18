@@ -292,15 +292,15 @@ a:hover {
 
 @media (max-width: 576px) {
     .image-wrapper1 {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 10px;
         padding: 10px;
     }
 
     .image-wrapper1 img {
-        width: 100% !important;
-        height: auto !important;
+        width: 100%;
+        height: auto;
     }
 
     .dropdown_menu {
