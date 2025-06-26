@@ -113,26 +113,58 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Lightbox next button (.next-btn) not found.");
     }
 
-    // Close lightbox when clicking outside the image or on the backdrop itself
     if (lightboxModal) {
         lightboxModal.addEventListener('click', (e) => {
-            // Close only if click is directly on the modal background or the image itself
-            // Not on the navigation buttons or close button
+          
             if (e.target === lightboxModal || e.target === lightboxImage) {
                 closeLightbox();
             }
         });
     }
 
-    // Keyboard navigation for lightbox
     document.addEventListener('keydown', (e) => {
-        if (lightboxModal.style.display === 'flex') { // Check if lightbox is currently open
+        if (lightboxModal.style.display === 'flex') { 
             if (e.key === 'ArrowRight') {
                 showNextImage();
             } else if (e.key === 'ArrowLeft') {
                 showPrevImage();
             } else if (e.key === 'Escape') {
                 closeLightbox();
+            }
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const generateBtn = document.getElementById('generate-btn');
+    const locationInput = document.getElementById('location-input');
+    const aiResults = document.getElementById('ai-results');
+
+    const apiKey = '638xXcYOqS_i8MbOKzrV5y8nibqxg3fJKZ6XySdk0M8'; 
+
+    generateBtn.addEventListener('click', async () => {
+        const query = locationInput.value;
+        if (query) {
+            aiResults.innerHTML = '<p>Generating images...</p>';
+            try {
+                const response = await fetch(`https://api.unsplash.com/search/photos?query=${query}&per_page=9&client_id=${apiKey}`);
+                const data = await response.json();
+                
+                aiResults.innerHTML = '';
+                data.results.forEach(photo => {
+                    const imgContainer = document.createElement('div');
+                    imgContainer.className = 'grid-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = photo.urls.small;
+                    img.alt = photo.alt_description;
+                    
+                    imgContainer.appendChild(img);
+                    aiResults.appendChild(imgContainer);
+                });
+            } catch (error) {
+                aiResults.innerHTML = '<p>Sorry, something went wrong. Please try again.</p>';
+                console.error('Error fetching images:', error);
             }
         }
     });

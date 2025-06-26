@@ -9,7 +9,7 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
-  <title>Activity 14</title>
+  <title>Get Stated</title>
 </head>
 
 <body class="started-page">
@@ -51,26 +51,13 @@
     </section>
   </main>
 
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn');
-    const toggleBtnIcon = document.querySelector('.toggle_btn i');
-    const dropDownMenu = document.querySelector('.dropdown_menu');
+  <script src="scripts/script.js"></script>
 
-    toggleBtn.addEventListener('click', function () {
-      dropDownMenu.classList.toggle('open');
-      const isOpen = dropDownMenu.classList.contains('open');
+    <footer class="footer-content">
+        <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
+        <p>&copy; 2025 Lennon. All Rights Reserved.</p>
+    </footer>
 
-      toggleBtnIcon.className = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars';
-    });
-  </script>
 </body>
-<footer class="footer-content">
-  <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
-  <p>&copy; 2025 Lennon. All Rights Reserved.</p>
-</footer>
-
-</html>
 
 </html>

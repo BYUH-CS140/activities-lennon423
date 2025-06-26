@@ -9,7 +9,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
-    <title>Activity 14</title>
+    <title>Contact Us</title>
 </head>
 
 <body class="contact-page">
@@ -38,46 +38,46 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="bio-container">
-            <div class="bio-text">
-                <h1>Biography</h1>
-                <p>Hi, I’m John Lennon Onda, the heart behind the lens at JLEO Studio.</p>
-                <p>My journey into photography began with a simple wish — to capture the moments I never had the chance
-                    to keep. Growing up, we didn’t have many photos to look back on, and that absence made me realize
-                    how powerful memories become when frozen in time.</p>
-                <p>That’s what drives me today: the desire to help others preserve their most precious memories. Whether
-                    it’s a quiet smile, a joyful celebration, or a fleeting glance — I believe every photo tells a story
-                    worth keeping.</p>
-                <p>Let’s create something beautiful that you can always look back on.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>CONTACT</h1>
+                <p class="section-spacing">
+                    For general or work inquiries please contact me at:<br>
+                    <a href="mailto:larajadephotography@gmail.com">larajadephotography@gmail.com</a>
+                </p>
+
+                <p class="section-spacing">
+                    For booking inquiries in the following locations please contact my representation on:
+                </p>
+
+                <div class="representation-grid">
+                    <div class="region">
+                        <h3>Personal Contact</h3>
+                        <p>Blood & Co Artist Management</p>
+                        <p><a href="jlennononda@gmail.com">jlennononda@gmail.com</a></p>
+                        <p><a href="tel:8087810668">(808)781-0668</a></p>
+                    </div>
+                    <div class="region">
+                        <h3>Facebook</h3>
+                        <p><a href="https://www.facebook.com/profile.php?id=61552678962242">JLEO Studio</a></p>
+                        <p><a href="lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
+                    </div>
+                </div>
             </div>
-                <div class="bio-image">
-    <img src="images/photograph.jpeg" alt="Photographer" />
-  </div>
-                
+
+            <div class="contact-image">
+                <img src="images/lennon.jpg" alt="Fashion model on a beach">
             </div>
-        </section>
+        </div>
     </main>
 
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn i');
-        const dropDownMenu = document.querySelector('.dropdown_menu');
+    <script src="scripts/script.js"></script>
 
-        toggleBtn.addEventListener('click', function () {
-            dropDownMenu.classList.toggle('open');
-            const isOpen = dropDownMenu.classList.contains('open');
+    <footer class="footer-content">
+        <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
+        <p>&copy; 2025 Lennon. All Rights Reserved.</p>
+    </footer>
 
-            toggleBtnIcon.className = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars';
-        });
-    </script>
 </body>
-<footer class="footer-content">
-      <p>Contact me at <a href="mailto:lennon023@go.byuh.edu">lennon023@go.byuh.edu</a></p>
-      <p>&copy; 2025 Lennon. All Rights Reserved.</p>
-  </footer>
-</html>
 
 </html>
