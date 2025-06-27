@@ -575,6 +575,82 @@ h2.text-color {
     scale: 1.05;
 }
 
+.facebook-info {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Form Styling */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+    
+}
+
+#compact-form input,
+#compact-form textarea {
+    width: 40%;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #555;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #000;
+    align-items: center;
+}
+
+#compact-form input {
+    margin-bottom: 15px;
+}
+
+#compact-form textarea {
+    height: 100%;
+    resize: none; /* Disables user resizing */
+}
+
+.submit-link {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+.submit-link:hover {
+    color: #F2D5A0; /* Your accent color */
+}
+
 @media (max-width: 1024px) {
 
     .navbar .links,
@@ -658,6 +734,14 @@ h2.text-color {
     .logo-icon{
         width: 40%;
         height: auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #compact-form textarea {
+        height: 150px; 
     }
 }
 
