@@ -605,34 +605,34 @@ h2.text-color {
     color: #000;
 }
 
-/* Form Styling */
 .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-bottom: 15px;
+    margin-left: 30%;
     
 }
 
 #compact-form input,
 #compact-form textarea {
-    width: 40%;
-    display: flex;
+    width: 60%;
     background-color: #fff;
     border: 1px solid #555;
     padding: 12px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     color: #000;
-    align-items: center;
+    display: grid;
 }
 
 #compact-form input {
     margin-bottom: 15px;
+    padding: 1%;
 }
 
 #compact-form textarea {
     height: 100%;
     resize: none; /* Disables user resizing */
+    padding: 4%;
 }
 
 .submit-link {
@@ -645,6 +645,9 @@ h2.text-color {
     float: right;
     padding: 10px 0;
     letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 47%;
 }
 
 .submit-link:hover {
